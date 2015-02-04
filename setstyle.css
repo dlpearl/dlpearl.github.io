@@ -1,0 +1,44 @@
+div#board {
+	background: black;
+	border: #999 1px solid;
+	width: 533px;
+	height: 340px;
+	padding: 24px;
+	margin: 0px auto;
+}
+
+div#board > p {
+	color: white;
+}
+
+div#board > div {
+	background: #FFAA00;
+	border: #000 1px solid;
+	float: left;
+	width: 91px;
+	height: 71px;
+	margin: 0px;
+	padding: 20px;
+	font-size: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+
+div#board > div > img {
+	position: relative;
+	top: 0;
+	left: -40;
+}
+
+div#timer {
+	background: white;
+	color: black;
+	border: #999 1px solid;
+	width: 533px;
+	height: 30px;
+	padding: 24px;
+	margin: 0px auto;
+	font-size: 50px;
+	line-height: 30px;
+	text-align: center;
+}
