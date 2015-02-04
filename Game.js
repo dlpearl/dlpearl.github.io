@@ -67,7 +67,7 @@ function Game(deck, handsize) {
 	this.setSize = 3;
 	this.cardMap = this.generateMap();
 	this.selections = [];
-	this.count = 5;
+	this.count = 100;
 	this.score = 0;
 };
 
