@@ -47,7 +47,7 @@ function showCount() {
 	text.innerHTML = game.count.toFixed(2)+"     Your score is: "+game.score;
 	game.count -= 0.01;
 	if (game.count < 0) {
-		text.innerHTML = "Game Over";
+		text.innerHTML = "Game Over, you got "+game.score+"points";
 	}
 }
 
