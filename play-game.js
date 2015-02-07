@@ -4,6 +4,7 @@ function check() {
 			game.updateHand(game.selections.map(function(arr){return arr[1]}));
 			game.drawBoard;
 			game.score++;
+			game.count += 6;
 		};
 		for (var i = 0; i < 3; i++) {
 			document.getElementById(game.selections[i][1]).style.opacity = 1;
@@ -44,8 +45,8 @@ function startGame() {
 var game = new Game(deck, 12);
 function showCount() {
 	var text = document.getElementById('timer');
-	text.innerHTML = game.count.toFixed(2)+"     Your score is: "+game.score;
-	game.count -= 0.01;
+	text.innerHTML = game.count+"     Your score is: "+game.score;
+	game.count -= 1;
 	if (game.count < 0) {
 		text.innerHTML = "Game Over, you got "+game.score+"points";
 	}

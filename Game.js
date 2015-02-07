@@ -133,7 +133,7 @@ Game.prototype.updateHand = function(indices) {
 };
 Game.prototype.start = function() {
 	var board = document.getElementById('board');
-	board.innerHTML = "<p>Click anywhere</p>"
+	board.innerHTML = "<p>Click anywhere, but do not cheat!! Yeah that means you Traci!</p>"
 	board.addEventListener('click', startGame, false);
 
 };
@@ -147,7 +147,7 @@ Game.prototype.drawBoard = function() {
 		iDiv.addEventListener('mousedown', select, false);
 		iDiv.innerHTML = '<img src="'+imageMap[this.cardMap[iDiv.id]]+'">';
 	};
-	window.setInterval(showCount, 10);
+	window.setInterval(showCount, 1000);
 };
 
 
