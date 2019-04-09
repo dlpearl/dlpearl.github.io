@@ -133,7 +133,7 @@ Game.prototype.updateHand = function(indices) {
 };
 Game.prototype.start = function() {
 	var board = document.getElementById('board');
-	board.innerHTML = "<p>Click anywhere, but do not cheat!! Yeah that means you Traci!</p>"
+	board.innerHTML = "<p>Click anywhere</p>"
 	board.addEventListener('click', startGame, false);
 
 };
